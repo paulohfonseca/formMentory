@@ -193,7 +193,7 @@ footer {
 
 @media (max-width: 768px) {
     .page {
-        max-width: 32rem;
+        max-width: 35rem;
     
         margin: 8rem auto;
     }
