@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    background-color: #E6E6F0;
+}
+
+body::before {
+    content: '';
+    
+    width: 100%;
+    height: 43.6rem;
+    
+    background-color: #535971;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+.page {
+    max-width: 75rem;
+
+    margin: 14rem auto;
+}
+
+header {
+    max-width: 41.7rem;
+    margin-bottom: 5.8rem;
+}
+
+header h1, header p {
+    color: #fff;
+}
+
+header h1 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: normal;
+    font-size: 4.8rem;
+
+    margin-bottom: 1.8rem;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    background-color: #fff;
+    border-radius: 2rem 2rem 0 0;
+
+    min-height: 30rem;
+
+    padding: 6.4rem;
+}
+
+fieldset {
+    margin-bottom: 3rem;
+    border: none;
+}
+
+fieldset legend {
+    width: 100%;
+
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    color: #535971;
+    
+    padding-bottom: 1.6rem;
+    margin-bottom: 2rem;
+
+    border-bottom: 1px solid #E6E6F0;
+}
+
+.nameAndsurname {
+    display: flex;
+    gap: 2.2rem;
+}
+
+.nameAndsurname .input-wrapper{
+    width: 50%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1.6rem;
+}
+
+.input-wrapper label {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #4E4958;
+
+    margin-bottom: 0.8rem;
+}
+
+.input-wrapper input {
+    height: 5.6rem;
+
+    font-size: 1.4rem;
+    color: #4E4958;
+
+
+    border: 1px solid #E6E6F0;
+    border-radius: 0.8rem;
+
+    background-color: #FAFAFC;
+
+    padding: 0 2.4rem;
+}
+
+.input-wrapper label span {
+    font-size: 1.2rem;
+    color: #C1BCCC;
+
+    margin-left: 0.6rem;
+}
+
+.scheduling {
+  display: flex;
+  gap: 3.2rem;
+}
+
+fieldset .scheduling div:nth-child(1) {
+    width: 100%;
+}
+  
+.timeMentory {
+    display: flex;
+    gap: 1rem;
+}
+
+fieldset h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #535971;
+
+    margin-top: 1.6rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 16rem;
+
+    border-radius: 0 0 2rem 2rem;
+
+    background-color: #535971;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60.8rem;
+    height: 5.6rem;
+
+    border-radius: 2rem;
+    border: none;
+
+    font-family: "Staatliches", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #FF5374;
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .page {
+        max-width: 45rem;
+    
+        margin: 8rem auto;
+    }
+
+    form {
+        padding: 4.4rem;
+    }
+
+    .nameAndsurname {
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+    }
+
+    .nameAndsurname .input-wrapper{
+        width: 100%;
+    }
+
+    .scheduling {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .timeMentory {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .timeMentory .input-wrapper {
+        width: 100%;
+    }
+
+    .button {
+        width: 38rem;
+    }
+}
